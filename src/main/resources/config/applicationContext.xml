@@ -10,9 +10,18 @@
             http://www.springframework.org/schema/context
             http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!--使得组件类注解生效，如：@Component、@Controller、@Service等-->
     <context:annotation-config/>
+
+    <!--SpringMVC会扫描com.junshengluo下面包含的所有的组件类，然后由Spring来创建他们的实例-->
+    <!--组件类：添加@Component、@Controller、@Service、@Repository注解的类-->
     <context:component-scan base-package="com.junshengluo.*"/>
+
+    <!--使得某些接口类内部使用的注解生效，如：@RequestMapping、@ResponseBody、@RequestBody等-->
     <mvc:annotation-driven/>
+
+    <!--springMVC的默认配置，具体什么配置，目前可以不用去了解-->
     <mvc:default-servlet-handler/>
 
+    <!--其他的配置一步一步来，之后再说-->
 </beans>
