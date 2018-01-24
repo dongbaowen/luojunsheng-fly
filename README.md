@@ -4,10 +4,13 @@
 3、访问 localhost:8080/api/firstBlood
 
 
+
 #认识接口
 1、看看 IndexController ，IndexController 中包含的就是后端接受请求的接口们。可以自己先照着葫芦画瓢，自己写一个可访问的接口（详细注释见 IndexController）  
 2、看看 PersonController，这里面提到了传递复杂参数的案例  
 3、大体瞜一眼那些加注释的地方，了解注入的大体意思  
+4、可以自己尝试写一个新的 Controller
+
 
 
 #项目结构
